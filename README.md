@@ -1,5 +1,3 @@
-# NOTE: This Zip archive contains a ready-to-use compiled binary of the SSANS network simulator. To run the simulator, follow the instructions in the usage section below!
-
 # Software Serial Arduino Network Simulator (SSANS)
 
 This is a simple network simulator for Arduino. It is based on the ASSP protocol and allows you to simulate a network of Arduinos connected by serial ports. The simulator is written in Kotlin and uses a custom EmulatedSerial system to communicate with the Arduinos.
