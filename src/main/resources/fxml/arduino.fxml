@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: turquoise; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.Arduino">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name" textAlignment="CENTER" wrappingWidth="94.39199829101562" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <GridPane.margin>
+            <Insets top="5.0" />
+        </GridPane.margin>
+    </Text>
+    <Text layoutX="51.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TX" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+    <Circle fx:id="txLed" fill="#808080" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+    <Text layoutX="62.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RX" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+    <Circle fx:id="rxLed" fill="#808080" layoutX="70.0" layoutY="275.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port 1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <Circle fx:id="pinOneLed" fill="#808080" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <Arc fx:id="pinOne" fill="#808080" length="180.0" radiusX="7.5" radiusY="7.5" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port 2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+    <Circle fx:id="pinTwoLed" fill="#808080" layoutX="149.0" layoutY="68.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+    <Arc fx:id="pinTwo" fill="#808080" layoutX="209.0" layoutY="68.0" length="180.0" radiusX="7.5" radiusY="7.5" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port 3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+    <Circle fx:id="pinThreeLed" fill="#808080" layoutX="149.0" layoutY="114.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+    <Arc fx:id="pinThree" fill="#808080" layoutX="21.0" layoutY="22.0" length="180.0" radiusX="7.5" radiusY="7.5" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port 4" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+    <Circle fx:id="pinFourLed" fill="#808080" layoutX="149.0" layoutY="160.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+    <Arc fx:id="pinFour" fill="#808080" layoutX="21.0" layoutY="22.0" length="180.0" radiusX="7.5" radiusY="7.5" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Text layoutX="66.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+    <Circle fx:id="buttonOne" fill="#ff7040" layoutX="72.0" layoutY="74.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+    <Text layoutX="64.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+    <Circle fx:id="buttonTwo" fill="#ff7040" layoutX="72.0" layoutY="281.0" radius="7.5" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+</GridPane>
