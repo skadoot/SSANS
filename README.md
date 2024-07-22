@@ -40,9 +40,9 @@ The simulator supports the following features:
 - Adding and removing Arduinos from the network at runtime
 - Sending and receiving messages between Arduinos
 - Logging of network activity
-- ~~Multiple Arduinos connected by emulated serial ports~~
-- ~~Customizable network topology~~
-- ~~Control over network speed~~
+- Multiple Arduinos connected by emulated serial ports
+- Customizable network topology
+- Control over network speed
 
 ## Usage
 
